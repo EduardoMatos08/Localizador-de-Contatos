@@ -24,11 +24,15 @@ function locationOfContact() {
     for(let i = 0; i < contacts.length; i++){
         if(input.value.toLowerCase() === contacts[i].nome.toLowerCase()) {
             p.innerHTML = `</br><p>${contacts[i].nome}</p></br><p>${contacts[i].telefone}</p>`
+            p.style.textAlign = "center"
+            p.style.fontSize = "25px"
             break
         }
 
         else{
             p.innerHTML = `<br>Houve um ERRO ou o contato não foi encontrado, tente novamente...`
+            p.style.fontSize = "20px"
+            p.style.textAlign = "center"
         }
     }
 

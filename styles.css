@@ -12,6 +12,12 @@ head {
 
 body {
     background-color: #7e7e7e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 script {
@@ -34,6 +40,7 @@ img {
 }
 
 section {
+    width: 350px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -93,7 +100,97 @@ button:active {
 }
 
 #contact-informations {
+    width: 100%;
+    text-align: center;
     font-size: 25px;
     font-weight: 700;
-    width: 400px;
+}
+
+@media screen and (max-width: 1010px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        height: 30vh;
+        width: auto;
+        margin-left: 35%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title-and-explanation {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #explanation {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+
+    img {
+        margin-left: 23%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #explanation {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    input {
+        width: 330px;
+    }
+
+    button {
+        width: 330px;
+    }
+
+    #contact-informations {
+        font-size: 25px;
+    }
+
 }
