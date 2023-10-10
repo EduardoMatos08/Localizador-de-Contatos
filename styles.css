@@ -195,3 +195,9 @@ button:active {
     }
 
 }
+
+@media screen and landscape {
+    img{
+        margin-left: 22%;
+    }
+}
