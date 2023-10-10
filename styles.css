@@ -89,6 +89,7 @@ button {
     opacity: 0.6;
     height: 50px;
     width: 350px;
+    cursor: pointer;
 }
 
 button:hover {
